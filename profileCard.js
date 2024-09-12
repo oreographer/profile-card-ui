@@ -1,5 +1,5 @@
 const CSS_URL =
-  "https://cdn.jsdelivr.net/gh/oreographer/profile-card-ui@master/styles.css";
+  "https://cdn.jsdelivr.net/gh/oreographer/profile-card-ui/styles.css";
 
 function injectCSS() {
   const link = document.createElement("link");
@@ -25,8 +25,14 @@ function showProfileCard() {
         </button>
         <div class="card" data-state="#about">
           <div class="card-header">
-            <div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')"></div>
-            <img class="card-avatar" src="https://oreographer.vercel.app/_next/image?url=%2Fme.webp&w=2048&q=75" alt="avatar" />
+            <div style='background: rgb(212, 144, 201);
+              background: linear-gradient(
+              90deg,
+              rgb(234, 173, 153) 0%,
+              rgb(238, 135, 217) 0%,
+              hsla(234, 93%, 67%, 1) 100%
+            );' class="card-cover"></div>
+            <img class="card-avatar" src="https://cdn.sanity.io/images/zfw0wlzh/production/01a5ba90f25a592a6156949570aa6faf3d98dff5-1382x1382.jpg?w=2000&fit=max&auto=format" alt="avatar" />
             <h1 class="card-fullname">Himanshu Sharma</h1>
             <h2 class="card-jobtitle">Developer & UI/UX designer</h2>
           </div>
@@ -37,34 +43,52 @@ function showProfileCard() {
                 <p class="card-desc">I'm a creative developer and UI/UX designer, crafting eye-catching experiences.
                 </p>
               </div>
+              
               <div class="card-social">
-                <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" />
-                  </svg></a>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" />
-                  </svg></a>
-                <a href="#"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <a href="https://github.com/oreographer" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.11.82-.26.82-.577v-2.176c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.082-.729.082-.729 1.205.085 1.84 1.24 1.84 1.24 1.07 1.835 2.809 1.305 3.495.998.107-.775.42-1.305.763-1.605-2.665-.3-5.466-1.333-5.466-5.931 0-1.31.467-2.38 1.235-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.518 11.518 0 013.005-.404c1.02.005 2.045.137 3.005.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.628-5.475 5.921.43.372.815 1.103.815 2.222v3.293c0 .32.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+
+                    <a target="_blank" href="https://x.com/oreographer">
+                    <svg xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg>
+                 </a>
+
+                  </svg>
+                  </a>
+                <a target='_blank' href="https://instagram.com/oreo_grapher"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                     <path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
                     <path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
                     <path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" />
                   </svg></a>
-                <a href="#"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <a target="_blank" href="https://in.linkedin.com/in/oreographer"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" />
                   </svg></a>
+                
+                <a target="_blank" href="https://oreographer.vercel.app"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+  <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
+</svg></a>
               </div>
             </div>
             <div class="card-section" id="experience">
               <div class="card-content">
                 <div class="card-subtitle">SKILL SET</div>
                 <div class="card-timeline">
+                  <div class="card-item" data-year="2024">
+                    <div class="card-item-title">AWS, Python, Motion graphics and other Libraries. </div>
+                    <div class="card-item-desc">This year, I have completed more complex projects and have been diving into Machine Learning and AI.</div>
+                  </div>
                   <div class="card-item" data-year="2023">
-                    <div class="card-item-title">MongoDB, PostgreSQL and other Databases </div>
-                    <div class="card-item-desc">MongoDB, PostgreSQL and other Databases</div>
+                    <div class="card-item-title">MongoDB, PostgreSQL and also CMS (Sanity)</div>
+                    <div class="card-item-desc">I use both SQL and NoSQL databases for different use cases, and I also use a Headless CMS for content management.</div>
                   </div>
                   <div class="card-item" data-year="2022">
-                    <div class="card-item-title">React & Nextjs</div>
-                    <div class="card-item-desc">For Front-end i choose these for versitile and powerful usecases.</div>
+                    <div class="card-item-title">React & Nextjs (with Tailwind)</div>
+                    <div class="card-item-desc">For front-end, I chose these for their versatile and powerful use cases.</div>
                   </div>
                   <div class="card-item" data-year="2021">
                     <div class="card-item-title">HTML, CSS, Javascript</div>
@@ -72,7 +96,7 @@ function showProfileCard() {
                   </div>
                   <div class="card-item" data-year="2019">
                     <div class="card-item-title">Photography & Editing</div>
-                    <div class="card-item-desc">Adobe Lightroom, video editing and Photography skills i've do since 5 years.</div>
+                    <div class="card-item-desc">Skilled in Adobe Lightroom, video editing, and photography with 5 years of experience.</div>
                   </div>
                 </div>
               </div>
@@ -101,7 +125,8 @@ function showProfileCard() {
                     </svg>
                     oreographer@gmail.com
                   </div>
-                  <button class="contact-me">WORK TOGETHER</button>
+
+                  <a href='mailto:oreographer@gmail.com' class="contact-me">WORK TOGETHER</a>
                 </div>
               </div>
             </div>
