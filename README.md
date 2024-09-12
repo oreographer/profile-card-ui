@@ -13,22 +13,22 @@ This script adds a profile card to your webpage, displaying personal info, skill
 
 ## Usage
 
-### Show Profile Card
+### First add this script in your webpage
+
+<script scr='https://cdn.jsdelivr.net/gh/oreographer/profile-card-ui/profileCard.js'></script>
+
+### Open Profile Card
 
 Use `openProfileCard` to add the profile card to the `<body>`. It sets up navigation and manages visibility.
-
-### Close Profile Card
-
-Call `closeProfileCard` to remove the card from the `<body>`.
-
-## Example
-
-<script src="path/to/this/script.js"></script>
 
 <script>
   window.openProfileCard();
 </script>
 
+### Close Profile Card
+
+Call `closeProfileCard` to remove the card from the `<body>`.
+
 <script>
-  window.closeProfileCard();
+  closeProfileCard();
 </script>
