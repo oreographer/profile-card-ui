@@ -15,7 +15,13 @@
   font-family: "Jost", sans-serif;
   position: fixed;
   inset: 0;
-  background-image: radial-gradient(circle, #ff4618, #0dc6d3, #17f9d3);
+  background: rgb(212, 144, 201);
+  background: radial-gradient(
+    circle,
+    rgba(212, 144, 201, 1) 0%,
+    rgba(33, 33, 219, 1) 51%,
+    rgba(213, 0, 255, 1) 100%
+  );
   z-index: 99999999999;
 }
 
