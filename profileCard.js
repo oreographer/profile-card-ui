@@ -1,4 +1,5 @@
-const CSS_URL = "https://oreographer.github.io/profile-card-ui/styles.css";
+const CSS_URL =
+  "https://cdn.jsdelivr.net/gh/oreographer/profile-card-ui/styles.css";
 
 function injectCSS() {
   const link = document.createElement("link");
