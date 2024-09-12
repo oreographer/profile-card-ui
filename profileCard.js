@@ -1,10 +1,10 @@
-// const CSS_URL = "http://localhost:5500/styles.css";
+const CSS_URL = "https://oreographer.github.io/profile-card-ui/styles.css";
 
 function injectCSS() {
   const link = document.createElement("link");
   link.rel = "stylesheet";
   link.type = "text/css";
-  link.href = "./styles.css";
+  link.href = CSS_URL;
   document.head.appendChild(link);
 }
 
