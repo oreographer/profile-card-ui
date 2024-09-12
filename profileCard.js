@@ -9,7 +9,7 @@ function injectCSS() {
   document.head.appendChild(link);
 }
 
-function showProfileCard() {
+function openProfileCard() {
   const existingCard = document.getElementById("profileCard");
 
   if (existingCard) {
@@ -174,5 +174,5 @@ function closeProfileCard() {
   }
 }
 
-window.showProfileCard = showProfileCard;
+window.openProfileCard = openProfileCard;
 window.closeProfileCard = closeProfileCard;
