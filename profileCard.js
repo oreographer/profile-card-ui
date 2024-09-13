@@ -23,7 +23,7 @@ function openProfileCard() {
           ×
         </button>
         <div class="card hide-scrollbar" data-state="#about">
-          < class="card-header">
+          <div class="card-header">
             <div style='background: rgb(212, 144, 201);
               background: linear-gradient(
               90deg,
