@@ -32,7 +32,9 @@ function openProfileCard() {
               hsla(234, 93%, 67%, 1) 100%
             );' class="card-cover"></div>
             <img class="card-avatar" src="https://cdn.sanity.io/images/zfw0wlzh/production/01a5ba90f25a592a6156949570aa6faf3d98dff5-1382x1382.jpg?w=2000&fit=max&auto=format" alt="avatar" />
-            <h1 class="card-fullname">Himanshu Sharma</h1>
+            <div class="card-fullname">
+              <h1>Himanshu Sharma</h1>
+            </div>
             <h2 class="card-jobtitle">Developer & UI/UX designer</h2>
           </div>
           <div class="card-main">
@@ -68,14 +70,14 @@ function openProfileCard() {
                   </svg></a>
                 
                 <a target="_blank" href="https://oreographer.vercel.app"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
-  <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-  <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
-</svg></a>
+                <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
+              </svg></a>
               </div>
             </div>
             <div class="card-section" id="experience">
               <div class="card-content">
-                <div class="card-subtitle">SKILL SET</div>
+                <div class="card-subtitle">EXPERIENCE</div>
                 <div class="card-timeline">
                   <div class="card-item" data-year="2024">
                     <div class="card-item-title">AWS, Python, Motion graphics and other Libraries. </div>
@@ -131,7 +133,7 @@ function openProfileCard() {
             </div>
             <div class="card-buttons">
               <button data-section="#about" class="is-active">ABOUT</button>
-              <button data-section="#experience">SKILL SET</button>
+              <button data-section="#experience">EXPERIENCE</button>
               <button data-section="#contact">CONTACT</button>
             </div>
           </div>
