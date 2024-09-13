@@ -15,7 +15,7 @@ This script adds a profile card to your webpage, displaying personal info, skill
 
 ### First add this script in your webpage
 
-`<script scr='https://cdn.jsdelivr.net/gh/oreographer/profile-card-ui/profileCard.js'></script>`
+`<script scr='https://oreographer.github.io/profile-card-ui/profileCard.js'></script>`
 
 ### Open Profile Card
 
