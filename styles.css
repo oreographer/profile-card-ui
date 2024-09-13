@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 #profileCard {
   color: #212236;
   -ms-overflow-style: none;
@@ -31,7 +27,7 @@
   cursor: pointer;
   top: 2%;
   right: 2%;
-  padding: 7px;
+  padding: 5px;
   font-size: 2rem;
   background: none;
   outline: none;
