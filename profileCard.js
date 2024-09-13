@@ -18,11 +18,11 @@ function openProfileCard() {
   const profileCard = document.createElement("div");
   profileCard.id = "profileCard";
   profileCard.innerHTML = `
-        <section class='section'>
+        <section class='section hide-scrollbar'>
         <button type='button' id='closeProfileCard' onclick='closeProfileCard()'>
           ×
         </button>
-        <div class="card" data-state="#about">
+        <div class="card hide-scrollbar" data-state="#about">
           <div class="card-header">
             <div style='background: rgb(212, 144, 201);
               background: linear-gradient(
@@ -37,7 +37,7 @@ function openProfileCard() {
             </div>
             <h2 class="card-jobtitle">Developer & UI/UX designer</h2>
           </div>
-          <div class="card-main">
+          <div class="card-main hide-scrollbar">
             <div class="card-section is-active" id="about">
               <div class="card-content">
                 <div class="card-subtitle">ABOUT</div>

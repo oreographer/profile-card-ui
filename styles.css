@@ -4,15 +4,21 @@
   box-sizing: border-box;
 }
 
-#profileCard {
-  color: #212236;
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+#profileCard {
+  color: #212236;
   font-family: "Jost", sans-serif;
   position: fixed;
   inset: 0;
   background: hsla(312, 66%, 76%, 1);
-
   background: linear-gradient(
     90deg,
     rgb(238, 135, 217) 0%,
