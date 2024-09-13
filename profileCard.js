@@ -23,7 +23,7 @@ function openProfileCard() {
           ×
         </button>
         <div class="card hide-scrollbar" data-state="#about">
-          <div class="card-header">
+          < class="card-header">
             <div style='background: rgb(212, 144, 201);
               background: linear-gradient(
               90deg,
@@ -32,10 +32,10 @@ function openProfileCard() {
               hsla(234, 93%, 67%, 1) 100%
             );' class="card-cover"></div>
             <img class="card-avatar" src="https://cdn.sanity.io/images/zfw0wlzh/production/01a5ba90f25a592a6156949570aa6faf3d98dff5-1382x1382.jpg?w=2000&fit=max&auto=format" alt="avatar" />
-            <div class="card-fullname">
-              <h1>Himanshu Sharma</h1>
-            </div>
-            <h2 class="card-jobtitle">Developer & UI/UX designer</h2>
+          
+            <h2 class="card-fullname">Himanshu Sharma</h2>
+
+            <h3 class="card-jobtitle">Developer & UI/UX designer</h3>
           </div>
           <div class="card-main hide-scrollbar">
             <div class="card-section is-active" id="about">
